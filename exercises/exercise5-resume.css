@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #84DBA8;
+
+}
+
+h1 {
+    color: #F2CB05;
+    background-color: #325938;
+    padding: 1.5rem;
+}
+
+h2 {
+    padding-left: 1.5rem;
+}
+
+img {
+    float: right;
+    border: 2px #325938 solid;
+    margin: 0.25rem;
+    max-width: 100%;
+}
+
+p {
+    margin: 1.5rem;
+}
+
+hr {
+    border: 3px solid #325938
+}
