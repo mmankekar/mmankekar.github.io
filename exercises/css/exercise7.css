@@ -1,0 +1,94 @@
+body {
+    background-color: #a0bcf0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 0.6rem;
+    text-align: right;
+}
+
+main {
+    border: 0px red solid;
+}
+
+.wrapper {
+    border: 0px black solid;
+    margin: 0 auto; /* Centers element horizontally. */
+    max-width: 40rem; /* Container needs width to appear centered. 
+        Content stops growing once it hits this width. */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+h2.logo {
+    background-color:#CF0067;
+    text-align: center;
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+}
+
+article {
+    background-color: white;
+    padding: 1.3rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 2rem;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+/* Link Styling */
+
+a:link {
+    color: #2C65A2
+}
+
+a:visited {
+    color: #939C47;
+}
+
+a:hover {
+    color: #934F47;
+}
+
+a:active {
+    color: #932247;
+}
+
+/* Link Styling for Header */
+
+header a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #D69C47;
+    text-decoration: none;
+}
+
+header a:active {
+    color: #9F0047;
+    text-decoration: none;
+}
