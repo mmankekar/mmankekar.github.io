@@ -1,0 +1,69 @@
+.wrapper {
+    border: 3px solid black; 
+    display: grid;
+    grid-template-rows: 150px min-content min-content 1fr; /*With auto, row automatically expands to fit height of content. 
+    With min-content, we get a container that fits content's minimum height. */
+    grid-template-columns: 2fr 5fr 2fr; 
+    min-height: 100vh; /*means 100% of the viewport height, want grid container to be at least as big as browser window */
+}
+
+header {
+    background-color: azure;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.emptyspaceleft {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0; /* This value removes the default margin applied by browser */
+}
+
+main {
+    background-color: white;  
+    padding: 2rem;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+
+h1 {
+    text-align: center;
+}
+
+.emptyspaceright {
+    background-color: white;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+footer { /*Footer is both an item in a grid and a grid container */
+    background-color: lightgray; /*C amouflaged the gap with this background color */
+    padding: 2rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    /* text-align: center; */
+    display: grid; /* Turns footer section into a grid container */
+    align-content: center;
+    justify-content: center;
+}
+
+address {
+    font-style: normal;
+}
