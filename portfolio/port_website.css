@@ -1,0 +1,73 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: auto
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* NAVIGATION BAR */
+/* Note for drafting process: some selectors and properties are placeholders. */
+
+.navbar {
+    background-color: lightgray;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.75rem;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    
+}
+
+nav li a {
+    color: black;
+    font-weight: 550;
+    margin-right: 6rem;
+
+}
+
+nav li a:hover {
+    color: crimson;
+}
+
+/* MAIN CONTENT */
+
+main {
+    padding: 5rem;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: lightgray;
+    padding: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
