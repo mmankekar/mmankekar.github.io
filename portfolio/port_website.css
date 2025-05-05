@@ -62,60 +62,78 @@ main {
 
 .port_page {
     display: grid;
-    /*grid-template-rows: 2fr 4fr 4fr 2fr;
-    grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr; */
+    /*border: blue solid;*/
+    place-items: center;
 }
 
 .port_page h1{
     text-align: center;
 }
 
+.port_page_buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-column-gap: 0.8rem;
+}
+
+button {
+    width: 100%;
+    display: block;
+    padding: 3rem;
+    margin: 0.5rem;
+    margin-bottom: 1.5rem;
+    border: 3px solid black;
+    border-radius: 2rem;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
 /* Note: would like to make buttons change color when hovered over,
 and maybe expand a little. */
 
-.journalism {
-    /*grid-row: 2/3;
-    grid-column: 4/6; */
-    padding: 3rem;
-    margin: 0.5rem;
-    margin-bottom: 1.5rem;
-    border: 3px solid black;
-    border-radius: 2rem;
-    width: 30%;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    font-weight: 500;
+.journalism_button {
+    place-self: stretch;
 }
 
-.other_prof_samps {
-   /* grid-row: 2/3;
-    grid-column: 6/8; */
-    padding: 3rem;
-    margin: 0.5rem;
-    margin-bottom: 1.5rem;
-    border: 3px solid black;
-    border-radius: 2rem;
-    width: 30%;
-
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    font-weight: 500;
+.other_prof_samps_button {
+    place-self: stretch;
 }
 
-.creative_writing {
-   /* grid-row: 3/4;
-    grid-column: 5/7; */
-    padding: 3rem;
-    margin: 0.5rem;
-    margin-bottom: 1.5rem;
-    border: 3px solid black;
-    border-radius: 2rem;
-    width: 30%;
+.creative_writing_button {
+    place-self: stretch;
+}
 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    font-weight: 500;
+/* JOURNALISM */
+/* Need to customize fonts */
+
+.journalism_page {
+    padding-left: 3rem;
+}
+
+h2 a:hover {
+    color:#6D0124;
+}
+
+.journalism_page li{
+    list-style-type: none;
+    padding: 0.5rem;
+}
+
+.journalism_page a:hover {
+    color: #6D0124;
+}
+
+/* CREATIVE WRITING */
+
+.creative_writing_page {
+    padding-left: 3rem;
+}
+
+.creative_writing_page li {
+    list-style-type: none;
+    padding: 0.5rem;
 }
 
 /* FOOTER */
@@ -128,6 +146,9 @@ footer {
     display: grid;
     align-content: center;
     justify-content: center;
+}
+
+.port_page_footer {
     position: absolute;
     bottom: 0;
     width: 100%;
