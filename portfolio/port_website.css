@@ -6,21 +6,21 @@
 
 body {
     margin: 0;
-    background-color: #939C47;
+    background-color: #FFD5EF;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+/*div {
+    border: solid blue;
 }
 
 /* NAVIGATION BAR */
-/* Note for drafting process: some selectors and properties are placeholders. */
 
 .navbar {
-    background-color: lightgray;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     padding: 0.5rem;
     padding-left: 1.5rem;
     padding-right: 1.75rem;
@@ -32,24 +32,31 @@ a {
     justify-content: space-between; 
 }
 
+header a {
+    text-decoration: none;
+    color: #A9D65C;
+}
+
+header a:hover {
+    color:#FFD5EF;
+}
+
 .logo {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: "DM Serif Text", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 2rem;
 }
 
 nav li {
     list-style-type: none;
-    display: inline-block;    
+    display: inline-block;   
 }
 
 nav li a {
-    color: black;
-    font-weight: 550;
-    margin-right: 6rem;
-}
-
-nav li a:hover {
-    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    margin-right: 6rem;  
 }
 
 /* MAIN CONTENT */
@@ -58,11 +65,92 @@ main {
     padding: 3.5rem;
 }
 
+main a {
+    text-decoration: none;
+    color: black;
+}
+
+main a:hover {
+    color: #6D0124;
+}
+
+img {
+    display: block;
+    border-radius: 2rem;
+}
+
+figcaption {
+    font-family: 'Arial';
+    font-size: 0.85rem;
+}
+
+/* HOMEPAGE */
+
+.homepage {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.9fr;
+}
+
+.home_photo {
+    display: grid;
+    place-content: center;
+    margin-left: auto;
+}
+
+.home_text {
+    padding-top: 25%;
+    padding-left: 3rem;
+}
+
+.home_text h2 {
+    font-weight: 500;
+}
+
+/* ABOUT ME */
+
+.about_me_page {
+    display: grid;
+}
+
+.about_me_page h1 {
+    place-self: center;
+}
+
+.about_me_page h2 {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.about_me_page p {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.about_me_photo {
+    place-self: center;
+}
+
+.bottom_photo {
+    padding-top: 1rem;
+}
+
+/* RESUME */
+
+.resume_page {
+    padding-left: 20rem;
+    padding-right: 20rem;
+}
+
+.resume_page h1 {
+    padding-bottom: 1rem;
+}
+
+
 /* PORTFOLIO PAGE */
 
 .port_page {
     display: grid;
-    /*border: blue solid;*/
     place-items: center;
 }
 
@@ -85,13 +173,11 @@ button {
     margin-bottom: 1.5rem;
     border: 3px solid black;
     border-radius: 2rem;
+    background-color: white;
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.1rem;
 }
-
-/* Note: would like to make buttons change color when hovered over,
-and maybe expand a little. */
 
 .journalism_button {
     place-self: stretch;
@@ -106,14 +192,31 @@ and maybe expand a little. */
 }
 
 /* JOURNALISM */
-/* Need to customize fonts */
 
 .journalism_page {
-    padding-left: 3rem;
+    display: grid;
 }
 
-h2 a:hover {
-    color:#6D0124;
+.journalism_page a {
+    text-decoration: none;
+    color: black;
+}
+
+.journalism_page h1 {
+    place-self: center;
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 2rem;
+}
+
+.journalism_page h2 {
+    padding-left: 10rem;
+}
+
+.journalism_list {
+    padding-left: 9rem;
 }
 
 .journalism_page li{
@@ -121,25 +224,103 @@ h2 a:hover {
     padding: 0.5rem;
 }
 
-.journalism_page a:hover {
-    color: #6D0124;
+/* OTHER PROFESSIONAL SAMPLES */
+
+.other_profs_page {
+    display: grid;
+}
+
+.other_profs_page a {
+    text-decoration: none;
+    color: black;
+}
+
+.other_profs_page h1 {
+    place-self: center;
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 2rem;
+}
+
+.other_profs_page h2 {
+    padding-left: 10rem;
+}
+
+.others_list {
+    padding-left: 9rem;
+}
+
+.other_profs_page li {
+    list-style-type: none;
+    padding: 0.25rem;
 }
 
 /* CREATIVE WRITING */
 
-.creative_writing_page {
-    padding-left: 3rem;
+.creative-writing_page {
+    display: grid;
 }
 
-.creative_writing_page li {
+.creative_writing_page a {
+    text-decoration: none; 
+    color: black;
+
+}
+
+.creative_writing_page h1 {
+    place-self: center;
+    display: block;
+    padding: 1rem;
+    margin: 0.5rem;
+    border: 1.5px solid black;
+    border-radius: 2rem;
+}
+
+.creative_writing_page h2 {
+    padding-left: 10rem;
+}
+
+.creative_writing_list {
+    padding-left: 9rem;
+}
+
+.creative_writing_list li {
     list-style-type: none;
     padding: 0.5rem;
 }
 
-/* FOOTER */
+/* CONTACT */
+
+.contact_page {
+    display: grid;
+    place-content: center;
+    grid-template-rows: 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
+    padding-top: 10%;
+}
+
+.contact_invite {
+    display: grid;
+    place-content: center;
+    margin-left: 15rem;
+}
+
+.contact_list {
+    padding-top: 0.55rem;
+    font-size: 0.9rem;
+}
+
+.contact_list a {
+    color: #1D438A;
+}
+
+/* FOOTER 
 
 footer {
-    background-color: lightgray;
+    background-color: black;
+    color:#FFD5EF;
     padding: 0.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -148,8 +329,8 @@ footer {
     justify-content: center;
 }
 
-.port_page_footer {
+.wonky_footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
+} */
